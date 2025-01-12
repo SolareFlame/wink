@@ -14,6 +14,11 @@ export const ThemeProvider = ({ children }) => {
         if (profilView) {
             profilView.className = dark_mode ? 'Profil-view light' : 'Profil-view dark';
         }
+
+        const profilEdit = document.querySelector('.Profil-edit');
+        if (profilEdit) {
+            profilEdit.className = dark_mode ? 'Profil-edit light' : 'Profil-edit dark';
+        }
     };
 
     return (
