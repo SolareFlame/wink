@@ -3,6 +3,7 @@ import { ThemeToggle } from './components/ThemeToggle';
 import { ThemeProvider } from "./context/ThemeContext";
 
 import pp from './assets/pp/pp.jpg';
+import {EditProfile} from "./components/EditProfile";
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
 
 
             <div className="Profil">
-                <div className="Profil-view">
+
+                <div className="Profil-view light">
                     <div className="Profil-top">
                         <img src={pp} alt="Profil Picture"/>
                         <h2>Solare</h2>
@@ -33,10 +35,17 @@ function App() {
                     </div>
                 </div>
 
-                <div className="Profil-edit">
-                    <p>Lorem</p>
+                <div className="Profil-edit light">
+                    <div className="Profil-edit-top">
+                        <p>Mon compte</p>
+                        <EditProfile/>
+                    </div>
 
-
+                    <div className="Profil-edit-desc">
+                        <p>Nom : Solare</p>
+                        <p>Prénom : Solare</p>
+                        <p>Mail : solare@solare.solare</p>
+                    </div>
                 </div>
             </div>
         </div>
